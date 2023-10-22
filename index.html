@@ -5,35 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="icon" href="./asset/icon/favicon.png">
-    <title>curriculum vitæ Michel</title>
+    <title>curriculum vitae Michel</title>
 </head>
 <body>
     <header>
-        <img src="./asset/img/picture.png" alt="picture">
-        <h1>BARRIERE Michel</h1>
-        <h2>Développeur Web Junior</h2>
-        <address>
-            <a href="https://www.google.fr/maps/place/1+Rue+de+la+Libert%C3%A9,+06000+Nice/@43.6984564,7.2661206,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddaa6cd500dc7:0xaa06fa3adeb0a635!
-8m2!3d43.6984526!4d7.2686955" target="_blank">1 Rue de la liberté 06000 Nice</a>
-            <a href="mailto:j.doe@mail.com">j.doe@mail.com</a>
-            <a href="tel:0606060606">0606060606</a>
-        </address>
+        <div id="header">
+            <a href="./asset/img/picture.png"><img id="picture" src="./asset/img/picture.png" alt="picture"></a>
+            <h1>BARRIERE Michel</h1>
+            <h2>Développeur Web Junior</h2>
+        </div>
+            <address id="address">
+                <a id="info" href="https://www.google.fr/maps/place/1+Rue+de+la+Libert%C3%A9,+06000+Nice/@43.6984564,7.2661206,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddaa6cd500dc7:0xaa06fa3adeb0a635!
+8m2!3d43.6984526!4d7.2686955" target="_blank">1 Rue de la liberté <br/> 06000 Nice</a>
+                <a id="info" href="mailto:j.doe@mail.com">j.doe@mail.com</a>
+                <a id="info" href="tel:0606060606">0606060606</a>
+            </address>
     </header>
 
-    <aside>
-        <h3> A propos</h3>
-        <p> Je suis un jeune devellopeur plein de rigueur et de minutieux.<br/>
-        Exercant en freelance depuis 1ans environs j'ai acquis des habitude de travail.<br/>
-        Marié et père de 3 enfants j'ai l'espris de famille et d'écoute necéssaire pour tous projet. </p>
+    <section id="milieu">
+    <aside id="colone_left">
+        <h3 id="titre1"> A propos</h3>
+        <p id="indent"> Je suis un jeune developpeur plein de rigueur et minutieux.<br/>
+        Exercant en freelance depuis 1 an environ j'ai acquis des habitudes de travail.<br/>
+        Marié et père de 3 enfants j'ai l'esprit de famille et d'écoute nécessaire pour tout projet. </p>
 
-        <h3>Langues parlées</h3>
+        <h3 id="titre1">Langues parlées</h3>
         <ul>
             <li>Francais -Langue maternelle</li>
             <li>Anglais -Scolaire et programmation</li>
             <li>Allemand - Mécanique</li>
         </ul>
 
-        <h3>Centres d'interêt</h3>
+        <h3 id="titre1">Centres d'interêt</h3>
         <ul>
             <li>Sport</li>
             <li>Voyages</li>
@@ -44,9 +47,10 @@
         </ul>
     </aside>
 
-    <Article>
-        <div>
-            <h3>Expériences Professionnelles</h3>
+    <Article id="article">
+        <div id="droit">
+            <h3 id="titre2">Expériences Professionnelles</h3>
+            <div id="exp">
             <h4>Technicien de maintenance chez Cemoi</h4>
                 <p>Du 17/08/2020 a maintenant
                     <ul>
@@ -72,9 +76,11 @@
                         <li>Chargement et déchargement camion</li>
                     </ul>
                 </p>
+            </div>
         </div>
-        <div>
-            <h3>Diplômes/Formations</h3>
+        <div id="droit">
+            <h3 id="titre2">Diplômes/Formations</h3>
+            <div id="exp">
             <h4>Développeur Web et Web Mobile</h4>
                 <p>Du 08/2023 au 08/2024
                     Centre Europeen de formation
@@ -91,22 +97,33 @@
                 <p>Du 01/10/2007 au 01/10/2009
                     CFAI de l'Aube
                 </p>
+            </div>
         </div>
-        <div>
-            <h3>Compétences</h3>
+        <div id="droit">
+            <h3 id="titre2">Compétences</h3>
+            <div id="exp">
             <ul>
                 <li>HTML 5 - Débutant</li>
                 <li>CSS 3 - Débutant</li>
                 <li>GitHub - Débutant</li>
             </ul>
+            </div>
         </div>
     </Article>
+</section>
+
+    <section class="reseau">
+        <div>
+            <ul class="reseau__list">
+                <li><img class="reseau__logo" href="https://fr.linkedin.com/" src="./asset/icon/linkedin.png" alt="linkedin"></li>
+                <li><img class="reseau__logo" href="https://twitter.com" src="./asset/icon/twitter.png" alt="twitter"></li>
+                <li><img class="reseau__logo" href="https://github.com/" src="./asset/icon/github.png" alt="github"></li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
-        <li><img src="./asset/icon/linkedin.png" alt="linkedin"></li>
-        <li><img src="./asset/icon/twitter.png" alt="twitter"></li>
-        <li><img src="./asset/icon/github.png" alt="github"></li>
-        Dernière mise à jour le <time datetime="2023-10-20"> 20 Octobre 2023 </time>.
+        <p id="maj">Dernière mise à jour le <time datetime="2023-10-20"> 20 Octobre 2023 </time></p>.
     </footer>
 
 </body>
