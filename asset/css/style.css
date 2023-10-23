@@ -25,10 +25,10 @@ body{
     align-items: center;
 }
 
-#info:hover{
+#info1:hover, #info2:hover, #info3:hover{
     text-decoration: underline;
 }
-#info{
+#info1, #info2, #info3{
     text-decoration: none;
     color: white;
     margin-left: 1.5em;
@@ -58,7 +58,7 @@ body{
     box-shadow: 0 0 10px white;
 }
 
-#milieu{
+.milieu{
     display: flex;
     border-right-style: solid;
     border-color: #2c1d27;
@@ -70,36 +70,36 @@ body{
     margin: 1em;
 }
 
-#colone_left{
+.milieu__left{
     background-color: #782221;
     flex-direction: left;
     width: 30%;
 }
 
-#exp:hover{
+.milieu__exp:hover{
     border-right-style: solid;
     border-color: #782221;
 }
 
-#Article{
+.milieu__Article{
     background-color: white;
     flex-direction:right;
 }
 
-#droit{
+.milieu__droit{
     margin-right: 2em;
     margin-left: 2em;
     text-align: left;
     width: 120%;
 }
 
-#titre1{
+.milieu__titre1{
     background-color: #dbc2a4;
     margin-right: 3em;
     text-indent: 1em;
 }
 
-#titre2{
+.milieu__titre2{
     text-indent: 0.2em;
     border-left-color: #782221;
     border-left-width: 0.4em;
